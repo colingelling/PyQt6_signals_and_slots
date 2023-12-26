@@ -1,0 +1,26 @@
+"""
+
+Created by Colin Gelling on 21/12/2023
+Using Pycharm Professional
+
+"""
+
+from PyQt6 import QtWidgets
+
+
+def main():
+    # Create an application
+    app = QtWidgets.QApplication(sys.argv)
+
+    # Define and load the Bootstrapper
+    from bootstrap.bootstrapper import Bootstrapper
+    Bootstrapper()
+
+    # Startup
+    sys.exit(app.exec())
+
+
+# Instantiate the application
+if __name__ == '__main__':
+    import sys
+    main()
